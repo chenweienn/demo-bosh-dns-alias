@@ -32,11 +32,11 @@ addons:
         mkdir -p /var/vcap/jobs/test-dns-alias/dns/
         cat >  /var/vcap/jobs/test-dns-alias/dns/aliases.json << EOF
         {  "testingdomain":["1.2.3.4"],
-           "_.sys.groundworks.poc.oci.io":["10.36.93.250"],
-           "_.apps.groundworks.poc.oci.io":["10.36.93.250"],
-           "_.tcp.groundworks.poc.oci.io":["10.36.93.249"],
-           "ssh.groundworks.poc.oci.io":["10.36.93.248"],
-           "opsmgr.groundworks.poc.oci.io":["10.36.93.247"]
+           "_.sys.DOMAIN":["10.36.93.250"],
+           "_.apps.DOMAIN":["10.36.93.250"],
+           "_.tcp.DOMAIN":["10.36.93.249"],
+           "ssh.DOMAIN":["10.36.93.248"],
+           "opsmgr.DOMAIN":["10.36.93.247"]
         }
         EOF
   include:
